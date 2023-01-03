@@ -1,0 +1,63 @@
+//check version
+docker --version
+//check images
+docker images
+//pull images
+docker pull <>
+//pull images by version
+docker pull <>:version
+//search images
+docker search images
+//run images
+docker run <>
+//see containers
+docker ps
+//see all containers
+docker ps -a
+//run images with parameter
+docker run --name <name> -d <containerid>
+//go inside container
+docker exec -it <containerid> <containerName>
+//exit from container
+exit()
+//check info about container
+docker inspect <containerid or name>
+//stop container
+docker stop <containerid or name>
+//remove container from log
+docker rm <containerid>
+//remove image
+docker rmi <imageName>
+//restart container
+docker restart <containerName>
+
+docker login
+
+docker commit
+
+docker push
+
+docker network
+
+docker copy
+
+docker logs
+
+docker volume
+
+docker logout
+
+///////////
+write in Dockerfile
+FROM ubuntu
+MAINTAINER durgesh
+RUN apt update
+CMD ["echo", "this is the first ubuntu image"]
+
+
+docker build -t <nameInLowerCase>
+
+//////////
+COPY . /user/src/myapp/
+CMD ["python3", "main.py"]
+
